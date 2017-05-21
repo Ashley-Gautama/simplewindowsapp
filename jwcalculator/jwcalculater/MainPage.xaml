@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="jwcalculater.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:jwcalculater"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="texbox" HorizontalAlignment="Left" Margin="544,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="-6.881,-3.323" TextChanged="TextBox_TextChanged" Width="124"/>
+        <RadioButton Content="Advantage" HorizontalAlignment="Left" Margin="183,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.425,0.485" Checked="RadioButton_Checked_1" Tag="2"/>
+        <RadioButton Content="Neutral" HorizontalAlignment="Left" Margin="183,390,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_2" RenderTransformOrigin="0.62,0.377" Tag="1"/> 
+        <RadioButton Content="Disadvantage" HorizontalAlignment="Left" Margin="183,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.567,0.302" Checked="RadioButton_Checked_3" Tag="3"/>
+        <Button x:Name="button" Content="Calculate Damage" HorizontalAlignment="Left" Margin="544,334,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <FlipView HorizontalAlignment="Left" Height="100" Margin="1343,761,-163,-141" VerticalAlignment="Top" Width="100"/>
+        <TextBlock Name="instructions" HorizontalAlignment="Left" Margin="544,127,0,0" TextWrapping="Wrap"  Text="Please input damage" VerticalAlignment="Top"/>
+        <TextBlock Name="result" HorizontalAlignment="Left" Margin="544,432,0,0" TextWrapping="Wrap" Text="Results:" VerticalAlignment="Top" Height="214" Width="197" SelectionChanged="result_SelectionChanged"/>
+    </Grid>
+</Page>

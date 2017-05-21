@@ -1,0 +1,1 @@
+C:\Users\Ashley\Documents\Visual Studio 2017\Projects\jwcalculater\jwcalculater\jwcalculater.csproj;x86
